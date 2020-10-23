@@ -21,7 +21,7 @@ export function useRx<TSource, TOutput>(
 
   useEffect(() => {
     sourceObservable$.next(value);
-  }, [sourceObservable$, value]);
+  }, [sourceObservable$, value, operator]);
 
   return [outputValue];
 }
