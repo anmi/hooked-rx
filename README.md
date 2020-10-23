@@ -1,3 +1,15 @@
+# Hooked-rx
+
+This library allows to use react hooks to process input props as observable and use output stream for producing new variable
+
+```typescript
+import { useRx } from 'hooked-rx';
+import { useCallback } from 'react';
+import { delay } from 'rxjs/operators';
+
+useRx(42, null, useCallback(delay(200), []))
+```
+
 # TypeScript library starter
 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
